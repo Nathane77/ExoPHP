@@ -17,17 +17,23 @@
 </style>
 </html>
 <?php
-fonction(){
-    $sentence = "Engage le jeu que je gagne"
-    $sentenceLowCas = strtolower($sentence);
-    $sentenceReverse = strrev($sentenceLowCas);
+   use CodeInc\StripAccents\StripAccents;
 
-    if($sentenceReverse == $sentenceLowCas){;
-        echo "La phrase est un palindrome"
-    };
-    else{;
-        echo "La phrase n'est pas un palindrome"
+function palindrome(){
+    $sentence = ("Engage le jeu que je le gagne");
+    $sentenceNoSpace = str_replace (' ','', $sentence);
+    $sentenceLowCas = mb_strtolower($sentenceNoSpace);
+    $sentenceReverse = strrev($sentenceLowCas);
+    
+    if($sentenceReverse == $sentenceLowCas){
+        echo "La phrase est un palindrome";
+    }
+    else{
+        echo "La phrase n'est pas un palindrome";
     };
 };
 
-echo $sentenceLowCas
+
+
+palindrome();;
+

@@ -16,9 +16,11 @@
     }
 </style>
 </html>
+
 <?php
 
 $sentence = "Notre fomartion DL commence aujourd'hui";
 
 $nbCaracteres = strlen($sentence);
 echo "La phrase contient $nbCaracteres caracteres";
+

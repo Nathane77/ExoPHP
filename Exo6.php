@@ -18,18 +18,19 @@
 </style>
 </html>
 <?php
-
-
 function Calc_Prix(){
     $prixU = 9.99;
-    $TVA = 0.2;
-    $quantité = 30;
+    $tauxTVA = 0.2;
+    $quantité = 5;
 
-   $PrixTTC = ($prixU * $TVA);
-   echo "$PrixTTC<br>";
-   $prixTotal = ($PrixTTC * $quantité); 
+    $coupTVA = ($prixU * $tauxTVA);
+    $prixTTC = ($prixU + $coupTVA);
+    $prixTotal = ($prixTTC * $quantité); 
 
-   echo "$prixTotal";
+    echo ("Prix unitaire de l'article: $prixU <br>");
+    echo ("Quantité: $quantité <br>");
+    echo ("Taux de TVA: $tauxTVA <br>");
+    echo ("montant de la facture à regler est de: $prixTotal");
 }
 
 Calc_Prix();

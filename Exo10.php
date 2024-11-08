@@ -39,7 +39,7 @@ else{
         };
     echo "Billet de dix: $nb10<br>";
 
-    while($rest >=5){
+   if($rest >=5){
         $rest -=5;
         $nb5 += 1;
         };
@@ -51,9 +51,5 @@ else{
         };
     echo "pieces de deux: $nb2<br>";
 
-    while($rest >=1){
-        $rest -=1;
-        $nb1 += 1;
-        };
-    echo "pieces de un:  $nb1<br>";
+    echo "pieces de un:  $rest<br>";
 };

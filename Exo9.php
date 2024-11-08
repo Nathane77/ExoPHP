@@ -18,30 +18,21 @@
 </html>
 <?php
 
-function imposable(){
     $age = 32;
     $sexe = "F";
     echo "Age: $age<br>";
     echo "Sexe: $sexe<br>";
-    if($age < 18){
-        echo "Vous devez etre majeur poure etre imposable";
-    }
-    elseif($sexe == "F"){
-        if($age >=18 && $age <=35){
+ 
+  
+        if($sexe == "F" && $age >=18 && $age <=35){
+            echo "La personne est imposable";
+        }
+        
+        elseif($sexe == "H" && $age >= 20){
+      
             echo "La personne est imposable";
         }
         else{
             echo "La personne n'est pas imposable";
         };
-    }
-    elseif($sexe == "H"){
-        if($age >= 20){
-            echo "La personne est imposable";
-        }
-        else{
-            echo "La personne n'est pas imposable";
-        };
-    }
-};
-
-imposable();
+ 

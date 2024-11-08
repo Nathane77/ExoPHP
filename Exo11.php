@@ -32,6 +32,6 @@ $i = 0;
 // foreach($tableau    as $valeur)
 
 foreach($marques as $value){
-    echo $value;
+    echo "-$value <br><br>";
 };
 

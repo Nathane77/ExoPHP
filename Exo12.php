@@ -19,4 +19,23 @@
 </style>
 </html>
 <?php
+$client = ["Mickaël"=>"FRA","Virgil"=>"ESP","Marie-Claire"=>"ENG","Denilson"=>"CRE"];
+ksort($client);
+
+foreach($client as $prenom => $langue){
+    switch ($langue){
+        case "FRA":
+            echo "Salut $prenom <br>";
+            break;
+        case "ESP":
+            echo "Hola $prenom <br>";
+            break;
+        case "ENG":
+            echo "Hello $prenom <br>";
+            break;
+        default:
+            echo "Hello $prenom <br>";
+        break;
+    };
+};
 

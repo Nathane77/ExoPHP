@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercise 1</h1>
+    <h1>Exercise 8</h1>
     <p></p>
+
 </body>
 <style>
     body{
@@ -18,3 +19,10 @@
 </html>
 
 <?php
+function showImage(){
+    $repetition = 4;
+    for($i = 0; $i < $repetition; $i++){
+        echo "<img src= https://my.mobirise.com/data/userpic/764.jpg alt=piti_chien> ";
+    }
+};
+showImage();

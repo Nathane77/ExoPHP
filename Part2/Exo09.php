@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercise 1</h1>
+    <h1>Exercise 9</h1>
     <p></p>
 </body>
 <style>
@@ -18,3 +18,10 @@
 </html>
 
 <?php
+function showRadio(){
+    $elements = ["Masculin","Feminin","Autre"];
+    foreach($elements as $civilite){
+        echo "<input type=radio>$civilite</input type=radio><br>";
+    }
+};
+showRadio();

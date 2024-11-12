@@ -26,6 +26,3 @@ $l4 = new Livre ("Shining","1977","447","16",$stephK) ;
 echo $l4;
 
 var_dump($stephK);
-
-
-

@@ -23,6 +23,6 @@ function showInput(){
     $nomsInput = ["Nom","Prénom","Ville"];
     foreach($nomsInput as $input){
         echo "<label>$input</label><br><input></input><br><br>";
-    }
+    }   
 }
 showInput();    

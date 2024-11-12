@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercise 1</h1>
-    <p></p>
+    <h1>Exercise 14</h1>
+    <p>En utilisant les ressources de la page http://php.net/manual/fr/book.filter.php, vérifier si une
+    adresse e-mail a le bon format.</p>
 </body>
 <style>
     body{

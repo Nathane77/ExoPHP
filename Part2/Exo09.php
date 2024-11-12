@@ -20,8 +20,10 @@
 <?php
 function showRadio(){
     $elements = ["Masculin","Feminin","Autre"];
+    echo "<select>";
     foreach($elements as $civilite){
         echo "<input type=radio>$civilite</input type=radio><br>";
     }
+    echo "</select>";
 };
 showRadio();

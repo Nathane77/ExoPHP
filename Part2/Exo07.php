@@ -21,9 +21,11 @@
 <?php
 function showCheckbox(){
     $elementes = ["choix 1","choix 2","choix 3"];
+    echo "<div>";
     foreach($elementes as $choice){
         echo "<input type=checkbox><label>$choice</label><br></input>";
     }
+    echo "</div>";
 };
 showCheckbox();
 //probably needs $_post for linking answers

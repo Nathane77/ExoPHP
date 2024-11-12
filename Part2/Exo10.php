@@ -27,22 +27,25 @@
 </html>
 
 <?php
-
 //Input for name, last name, town.
 function showInput(){
     $nomsInput = ["Nom","Prénom","Ville"];
+    echo "<div>";
     foreach($nomsInput as $input){
         echo "<label>$input</label><br><input></input><br>";
     }
     echo "<label>Email</label><br><input type=email></input><br>";
+    echo "<div>";
 }
 
 //Radio input for civilité
 function showRadio(){
     $elements = ["Masculin","Feminin","Autre"];
+    echo "<div>";
     foreach($elements as $civilite){
         echo "<input type=radio name=civilite>$civilite</input type=radio><br>";
     }
+    echo "<div>";
 };
 function alimenterElements(){
     $elements = ["Développeur Logiciel","Designer web","Chef de projet"];

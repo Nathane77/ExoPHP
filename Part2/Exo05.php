@@ -21,8 +21,10 @@ précisant le nom des champs associés.
 <?php
 function showInput(){
     $nomsInput = ["Nom","Prénom","Ville"];
+    echo "<div>";
     foreach($nomsInput as $input){
         echo "<label>$input</label><br><input></input><br><br>";
-    }   
+    }
+    echo "</div>";   
 }
 showInput();    
